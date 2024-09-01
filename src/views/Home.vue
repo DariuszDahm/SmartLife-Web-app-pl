@@ -1,19 +1,19 @@
 <template>
   <div id="nav">
     <el-form v-if="!loginState" :model="loginForm" :inline="true">
-      <el-form-item label="Email address" size="medium">
+      <el-form-item label="Adres email" size="medium">
         <el-input v-model="loginForm.username"></el-input>
       </el-form-item>
-      <el-form-item label="Password">
+      <el-form-item label="Hasło">
         <el-input type="password" v-model="loginForm.password"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="login()">Login</el-button>
+        <el-button type="primary" @click="login()">Zaloguj się</el-button>
       </el-form-item>
     </el-form>
     <template v-else>
-      <el-button type="default" @click="refreshDevices()">Refresh</el-button>
-      <el-button type="default" @click="logout()">Logout</el-button>
+      <el-button type="default" @click="refreshDevices()">Odświerz</el-button>
+      <el-button type="default" @click="logout()">Wyloguj</el-button>
     </template>
   </div>
   <div id="devices">
