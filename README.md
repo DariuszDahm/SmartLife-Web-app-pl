@@ -1,34 +1,34 @@
 # smart-life-webapp
 
-Simple [Vercel](https://vercel.com/) webapp to control [Smart Life](https://www.ismartlife.me/) devices and scenes.
+Prosta [Vercel](https://vercel.com/) aplikacja internetowa do sterowania urządzeniami i scenami [Smart Life](https://www.ismartlife.me/).
 
 > [!IMPORTANT]
-> You need to postfix your `automation` names with `#`, otherwise they will be displayed as `scenes`.
-> This is needed due to work around the tuya API
+> Musisz dodać do nazw `automatyzacji` znak `#`, w przeciwnym razie zostaną one wyświetlone jako `sceny`.
+> Jest to konieczne ze względu na obejście API tuya
 
-## Website
+## Strona internetowa
 https://smart-life.vercel.app/
 
-* Only SmartLife accounts created with email and password are supported.
-  * Accounts linked to Google does not work for some unknown reasons
+* Obsługiwane są tylko konta SmartLife utworzone za pomocą adresu e-mail i hasła.
+ * Konta połączone z Google nie działają z nieznanych przyczyn
 
 
-## Project setup
+## Konfiguracja projektu
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Kompiluje i ładuje ponownie na bieżąco w celach programistycznych
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Kompiluje i minimalizuje do produkcji
 ```
 npm run build
 ```
 
-### Notes
+### Notatki
 * **tuya API** https://www.home-assistant.io/integrations/tuya/
 * **Icons** https://icons8.com/icons/set/clapperboard
 
